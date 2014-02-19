@@ -51,7 +51,7 @@ body {
 .jumbotron {
     text-align: center;
     border-bottom: 1px solid #e5e5e5;
-    height: 800px;
+    
     .btn {
         font-size: 21px;
         padding: 14px 24px;
@@ -63,6 +63,13 @@ body {
 
     img {
         width: 200px;
+        height: 200px;
+        border-radius: 60%;
+    }
+
+    .painting-title{
+        height: 50px;
+        width: 200px;
     }
 }
 
@@ -72,6 +79,10 @@ body {
 
     &.active {
         opacity: 1;
+    }
+
+    img {
+        width: 80%;
     }
 }
 /* Supporting marketing content */

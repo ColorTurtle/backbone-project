@@ -4,7 +4,7 @@ var Contact = Backbone.Model.extend({
 		date: '1889',
 		avatar: 'http://www.vangoghgallery.com/catalog/image/0612/Starry-Night.jpg',
 		bio: 'Dummy',
-		mainImage: ''
+		source: ''
 	}
 });
 
