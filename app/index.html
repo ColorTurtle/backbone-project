@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>backbone todo</title>
+        <title>backbone practice</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -27,19 +27,21 @@
         <![endif]-->
 
 
-        <div class="container">
             <div class="header">
-                <ul class="nav nav-pills pull-right">
+            <div class="container">
+<!--                 <ul class="nav nav-pills pull-right">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-                <h3 class="text-muted">backbone todo</h3>
+ -->                <h3 class="pull-right">backbone.js practice</h3>
+            </div>
             </div>
 
+            <div class="container">
             <div class="jumbotron">
                 <h1>The Works of </br>Van Gogh</h1>
-                <p class="lead">Always a pleasure scaffolding your apps.</p>
+                <p class="lead">Stop and see the colors.</p>
                 <div class="js-jumbotron">
                 </div>
             </div>
@@ -52,23 +54,29 @@
             </div>
 
             <div class="footer">
-                <p>♥ from the Yeoman team</p>
+                <p>♥ from ColorTurtle</p>
             </div>
 
         </div>
         <!-- List View Template -->
         <script type="text/templ" id="list-item-template">
-        <div class="painting-title text-center"><h4><%= name %></h4></div>
-        <img src="<%= avatar %>"/>
-        <p><%= date %></p>
-
+        <div class="painting-title text-center container">
+            <h4><%= name %></h4>
+        </div>
+        
+        <div class="wrapper text-center">
+        <img class="painting-pic"src="<%= avatar %>"/>
+        </div>
+        <p class="painting-date text-center container"><%= date %></p>
+        </div>
+        
         </script>
         <!-- Jumbo Template -->
         <script type="text/templ" id="jumbo-item-template">
         <img src="<%= avatar %>"/>
         <h4><%= name %></h4>
         <p><%= date %></p>
-        <p><%= bio %></p>
+        <p class="text-justify"><%= bio %></p>
 
         </script>
 

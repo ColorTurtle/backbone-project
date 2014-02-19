@@ -7,18 +7,18 @@ $(document).ready(function(){
 
 	var collectionIndex = 1;
 
-	// var jumbotronLoop = setInterval(function(){
-	// 	$('.main-pic').removeClass('active')
-	// 	new JumboView( {model: contacts.at(collectionIndex)} )
+	var jumbotronLoop = setInterval(function(){
+		$('.main-pic').removeClass('active')
+		new JumboView( {model: contacts.at(collectionIndex)} )
 
 
-	// 	if (contacts.length === collectionIndex + 1){
-	// 		collectionIndex = 0;
-	// 	} else {
-	// 		collectionIndex++;
-	// 	}
+		if (contacts.length === collectionIndex + 1){
+			collectionIndex = 0;
+		} else {
+			collectionIndex++;
+		}
 
-	// }, 6000)
+	}, 6000)
 
 	new JumboView( {model: contacts.first()} )
 

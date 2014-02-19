@@ -1,10 +1,11 @@
 var ListView = Backbone.View.extend({
-	className: 'list-item col-md-4 col-xs-4', 
+	className: 'list-item col-md-4 col-sm-4', 
 
 	createTemplate: _.template($('#list-item-template').text()),
 	
 	events: {
-		"click": "setJumbotronItem"
+		"click": "setJumbotronItem",
+		"hover": "showMore"
 	},
 
 	initialize: function(){
@@ -13,6 +14,10 @@ var ListView = Backbone.View.extend({
 		
 		this.render();
 
+	},
+
+	showMore: function(){
+		$('.painting-pic').toggleClass('inFocus');
 	},
 
 	render: function(){

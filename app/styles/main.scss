@@ -11,8 +11,9 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 /* Space out content a bit */
 body {
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 20px;
+    color: #5D5959;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -26,6 +27,10 @@ body {
 /* Custom page header */
 .header {
     border-bottom: 1px solid #e5e5e5;
+    background: url(http://farm3.staticflickr.com/2332/1910210749_a01c890672_b.jpg);
+    overflow: hidden;
+    color: white;
+    text-shadow: 1px 1px 5px black;
 
     /* Make the masthead heading the same height as the navigation */
     h3 {
@@ -58,6 +63,10 @@ body {
     }
 }
 
+.wrapper {
+    margin: auto 0px;
+}
+
 .list-item {
     color: gray;
 
@@ -68,7 +77,11 @@ body {
     }
 
     .painting-title{
-        height: 50px;
+        height: 70px;
+        width: 200px;
+    }
+
+    p {
         width: 200px;
     }
 }
@@ -96,7 +109,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 730px;
+        max-width: 800px;
     }
 
     /* Remove the padding we set earlier */

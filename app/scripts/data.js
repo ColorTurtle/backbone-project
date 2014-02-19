@@ -9,18 +9,18 @@ var data = [
 
 	{
 		name: 'Still Life: Vase with Twelve Flowers',
-		bio: 'Jerky shankle short loin corned beef prosciutto kielbasa spare ribs leberkas turkey kevin. Chuck salami strip steak, jerky pastrami brisket ball tip rump ribeye flank sirloin leberkas. Brisket frankfurter ham hock drumstick jerky t-bone biltong. Turducken chuck tenderloin meatball fatback bacon short loin, swine landjaeger corned beef porchetta short ribs jowl ham.',
+		bio: 'Van Gogh envisioned his sunflower works as a series and worked diligently on them in anticipation of the arrival in Arles of his friend, Paul Gauguin. In a letter to Emile Bernard written around 21 August 1888 Vincent wrote: "I’m thinking of decorating my studio with half a dozen paintings of Sunflowers. A decoration in which harsh or broken yellows will burst against various blue backgrounds, from the palest Veronese to royal blue, framed with thin laths painted in orange lead. Sorts of effects of stained-glass windows of a Gothic church." ',
 		date: 'January, 1889',
 		avatar: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcUT9SWDcWvxIECgq3BgetJ88Ncih7namWhXbj4HspiZZAr4AgNg',
-		source: ''
+		source: '<a href="http://www.vggallery.com/painting/p_0456.htm">vggallery.com</a>'
 	},
 
 	{
 		name: 'Window of Vincent\'s Studio at the Asylum',
-		bio: 'Jerky shankle short loin corned beef prosciutto kielbasa spare ribs leberkas turkey kevin. Chuck salami strip steak, jerky pastrami brisket ball tip rump ribeye flank sirloin leberkas. Brisket frankfurter ham hock drumstick jerky t-bone biltong. Turducken chuck tenderloin meatball fatback bacon short loin, swine landjaeger corned beef porchetta short ribs jowl ham.',
+		bio: 'During his stay at Saint-Paul asylum, Van Gogh experienced periods of illness when he could not paint. When he was able to resume, painting provided solace and meaning for him. Nature seemed especially meaningful to him, trees, the landscape, even caterpillars as representative of the opportunity for transformation and budding flowers symbolizing the cycle of life.',
 		date: 'October, 1889',
 		avatar: 'http://1.bp.blogspot.com/-N4NaDBjYuHE/UVQeCCezAkI/AAAAAAAAcm4/v0fkG4JMxH8/s1600/1889%2BWindow%2Bof%2BVincent\'s%2BStudio%2Bat%2Bthe%2BAsylum%2Bblack%2Bchalk%2B%26%2Bgouache%2B62%2Bx%2B47.6%2Bcm.jpg',
-		source: ''
+		source: '<a href src="http://en.wikipedia.org/wiki/Saint-Paul_Asylum,_Saint-Rémy_(Van_Gogh_series)">Wikipedia</a>'
 	},
 
 	{
