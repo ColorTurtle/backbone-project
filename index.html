@@ -1,11 +1,6 @@
-<!DOCTYPE html><!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--><!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]--><!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]--><!--[if gt IE 8]><!--><html class=no-js><!--<![endif]--><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><title>backbone practice</title><meta name=description content=""><meta name=viewport content="width=device-width"><!-- Place favicon.ico and apple-touch-icon.png in the root directory --><link rel=stylesheet href=styles/vendor.css><link rel=stylesheet href=styles/2e719bac.main.css><script src=bower_components/modernizr/modernizr.js></script><body><!--[if lt IE 10]>
+<!DOCTYPE html><!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--><!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]--><!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]--><!--[if gt IE 8]><!--><html class=no-js><!--<![endif]--><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><title>backbone practice</title><meta name=description content=""><meta name=viewport content="width=device-width"><!-- Place favicon.ico and apple-touch-icon.png in the root directory --><link rel=stylesheet href=styles/vendor.css><link rel=stylesheet href=styles/33343c29.main.css><script src=bower_components/modernizr/modernizr.js></script><body><!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]--><div class=header><div class=container><!--                 <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
- --><h3 class=pull-right>backbone.js practice</h3></div></div><div class=container><div class=jumbotron><h1>The Works ofVan Gogh</h1><p class=lead>Stop and see the colors.</p><div class=js-jumbotron></div></div><div class="row marketing"><div class="row js-contact-list"></div></div><div class=footer><p>♥ from ColorTurtle</p></div></div><!-- List View Template --><script type=text/templ id=list-item-template><div class="painting-title text-center container">
+        <![endif]--><div class=header><div class=container><h3 class=pull-right>backbone.js practice</h3><h1>The Works of Van Gogh</h1><p class=lead>Stop and see the colors.</p></div></div><div class="container app-box"><div class=row><div class="row left-column col-md-3"><button type=button class="btn btn-default btn-lg add-button js-add-button" style="padding-left: 4px; padding-right: 4px" data-toggle=modal data-target=#myModal><span>Create</span></button><div class="row js-contact-list thumbnail-pics"></div></div><div class="jumbotron col-md-8"><div class=js-jumbotron></div></div></div><div class=footer><p>♥ from ColorTurtle</p></div><div class="modal fade" id=myModal tabindex=-1 role=dialog aria-labelledby=myModalLabel aria-hidden=true><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel>Modal title</h4></div><div class=modal-body><input class=name-input placeholder=Name><input class=bio-input placeholder=Bio><input class=date-input placeholder=Date><input class=avatar-input placeholder=Avatar><input class=source-input placeholder=Source></div><div class=modal-footer><button type=button class="btn btn-default" data-dismiss=modal>Close</button> <button type=button class="btn js-save-button btn-primary" data-dismiss=modal>Save changes</button></div></div></div></div></div><!-- List View Template --><script type=text/templ id=list-item-template><div class="painting-title text-center container">
             <h4><%= name %></h4>
         </div>
         
@@ -13,12 +8,19 @@
         <img class="painting-pic"src="<%= avatar %>"/>
         </div>
         <p class="painting-date text-center container"><%= date %></p>
-        </div></script><!-- Jumbo Template --><script type=text/templ id=jumbo-item-template><img src="<%= avatar %>"/>
-        <h4><%= name %></h4>
+        <div class="button-row text-center container">
+            <button type="button" class="btn btn-default btn-lg edit-button js-edit-button">
+                <span>Edit</span>
+            </button>
+            <button type="button" class="btn btn-default btn-lg remove-button js-remove-button">
+                <span>Cut</span>
+            </button>
+            </div></script><!-- Jumbo Template --><script type=text/templ id=jumbo-item-template><h2><%= name %></h2>
+        <img src="<%= avatar %>"/>
         <p><%= date %></p>
         <p class="text-justify"><%= bio %></p></script><script src=scripts/f2c44bb8.vendor.js></script><!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');</script><script src=scripts/aaf74903.plugins.js></script><script src=scripts/d23dcb95.main.js></script>
+            ga('create','UA-XXXXX-X');ga('send','pageview');</script><script src=scripts/aaf74903.plugins.js></script><script src=scripts/d82c9695.main.js></script>
