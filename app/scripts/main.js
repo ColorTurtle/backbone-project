@@ -6,7 +6,15 @@ $(document).ready(function(){
 	window.contacts = new ContactsCollection( );
 
 	// var collectionIndex = 1;
-
+window.deleteFunction = function(){
+	contacts.each(function(dataStuff){
+		console.log(dataStuff)
+		$.ajax({
+			type: 'delete',
+			url: 'http://0.0.0.0:3000/collections/contacts/'+dataStuff.get("_id")
+		})
+	})
+};
 
 	contacts.fetch({
     success: function(){
@@ -15,7 +23,7 @@ $(document).ready(function(){
       })
       
     },
-    
+
     error: function(){
       console.log('WHOAAAAAAAAAA theres a problem')
     }
@@ -38,6 +46,11 @@ $(document).ready(function(){
 
   	freshModel.save()
   });
+
+
+  	$('.js-contact-list').on('mouseenter mouseleave', '.list-item', function(){
+		$(this).toggleClass('highlight');
+	});
 
 
 	// var jumbotronLoop = setInterval(function(){

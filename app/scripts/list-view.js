@@ -5,6 +5,7 @@ var ListView = Backbone.View.extend({
 	
 	events: {
 		"click": "setJumbotronItem",
+		"click .js-remove-button": "remove",
 	},
 
 	initialize: function(){

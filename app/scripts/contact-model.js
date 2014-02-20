@@ -3,7 +3,7 @@ var Contact = Backbone.Model.extend({
 	idAttribute: '_id',
 
 	defaults: {
-		name: '????',
+		name: 'To be filled in later',
 		date: '1889',
 		avatar: 'http://www.vangoghgallery.com/catalog/image/0612/Starry-Night.jpg',
 		bio: 'Something else painted by Vincent Van Gogh',
