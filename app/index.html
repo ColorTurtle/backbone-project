@@ -27,35 +27,56 @@
         <![endif]-->
 
 
-            <div class="header">
+        <div class="header">
             <div class="container">
-<!--                 <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
- -->                <h3 class="pull-right">backbone.js practice</h3>
-            </div>
-            </div>
-
-            <div class="container">
-            <div class="jumbotron">
-                <h1>The Works of </br>Van Gogh</h1>
+                <h3 class="pull-right">backbone.js practice</h3>
+                <h1>The Works of Van Gogh</h1>
                 <p class="lead">Stop and see the colors.</p>
-                <div class="js-jumbotron">
+            </div>
+        </div>
+
+        <div class="container app-box">
+            <div class="row">
+                <div class="row left-column col-md-3">
+                    <button type="button" class="btn btn-default btn-lg add-button js-add-button" style="padding-left: 4px; padding-right: 4px;"  data-toggle="modal" data-target="#myModal">
+                        <span>Create</span>
+                    </button>
+                    <div class="row js-contact-list thumbnail-pics">
+                        
+
+                    </div>
+                </div>
+                <div class="jumbotron  col-md-8">
+                    <div class="js-jumbotron">
+                    </div>
                 </div>
             </div>
 
-            <div class="row marketing">
-                <div class="row js-contact-list">
-                    
-
-                </div>
-            </div>
 
             <div class="footer">
                 <p>♥ from ColorTurtle</p>
             </div>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <input class="name-input" placeholder="Name">
+        <input class="bio-input" placeholder="Bio">
+        <input class="date-input" placeholder="Date">
+        <input class="avatar-input" placeholder="Avatar">
+        <input class="source-input" placeholder="Source">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn js-save-button btn-primary" data-dismiss="modal">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
         </div>
         <!-- List View Template -->
@@ -68,13 +89,20 @@
         <img class="painting-pic"src="<%= avatar %>"/>
         </div>
         <p class="painting-date text-center container"><%= date %></p>
-        </div>
+        <div class="painting-title text-center container">
+            <button type="button" class="btn btn-default btn-lg edit-button js-edit-button">
+                <span class="glyphicon glyphicon-pencil"></span>
+            </button>
+            <button type="button" class="btn btn-default btn-lg remove-button js-remove-button">
+                <span class="glyphicon glyphicon-remove"></span>
+            </button>
+            </div>
         
         </script>
         <!-- Jumbo Template -->
         <script type="text/templ" id="jumbo-item-template">
+        <h2><%= name %></h2>
         <img src="<%= avatar %>"/>
-        <h4><%= name %></h4>
         <p><%= date %></p>
         <p class="text-justify"><%= bio %></p>
 

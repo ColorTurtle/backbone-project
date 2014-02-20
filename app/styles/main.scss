@@ -56,6 +56,7 @@ body {
 .jumbotron {
     text-align: center;
     border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 15px;
     
     .btn {
         font-size: 21px;
@@ -63,8 +64,32 @@ body {
     }
 }
 
+.app-box {
+    overflow:hidden;
+    padding: 10px 0px;
+}
+
+.thumbnail-pics {
+    overflow-y: scroll;
+    height: 600px;
+}
+
 .wrapper {
     margin: auto 0px;
+}
+
+.left-column {
+    margin-right: 10px;
+    margin-left: 10px;
+    background: #e5e5e5;
+
+    .add-button {
+        background-image: url(https://static.squarespace.com/static/5262c165e4b0fe976f8d314c/5264191ce4b00b6c2cf21e12/5264191de4b00b6c2cf21e62/1234643613533/1000w/Van%20Gogh%20Reaper.jpg);
+        margin: 5px 0px;
+        color: white;
+        text-shadow: 1px 2px 3px black;
+        width: 100%;
+    }
 }
 
 .list-item {
@@ -84,6 +109,9 @@ body {
     p {
         width: 200px;
     }
+    .buttons-row {
+    width: 200px;
+    }
 }
 
 .main-pic {
@@ -99,17 +127,17 @@ body {
     }
 }
 /* Supporting marketing content */
-.marketing {
-    margin: 40px 0;
-    p + h4 {
-        margin-top: 28px;
-    }
-}
+// .marketing {
+//     margin: 0px 0;
+//     p + h4 {
+//         margin-top: 28px;
+//     }
+// }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 800px;
+        max-width: 900px;
     }
 
     /* Remove the padding we set earlier */
@@ -129,5 +157,5 @@ body {
     .jumbotron {
         border-bottom: 0;
     }
-}
 
+}
